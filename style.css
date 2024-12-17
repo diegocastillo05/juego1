@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contentJuego {
+  min-height: 100vh;
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.espacio {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.espacio .fondo img {
+  width: 100%;
+}
+
+.fondo {
+  position: relative;
+  z-index: 1;
+}
+.ContentItem {
+  width: 95.61px;
+  height: 101.31px;
+  flex-shrink: 0;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  border-radius: 18px;
+  border: 3px dashed #dcdcdc;
+  background: rgba(79, 79, 79, 0.6);
+}
+
+.content1 {
+  bottom: 159px;
+  left: 212px;
+}
+
+.content2 {
+  bottom: 33px;
+  left: 551px;
+}
+
+.content3 {
+  bottom: 223px;
+  right: 51px;
+}
+
+.content4 {
+  top: 30px;
+  right: 135px;
+}
+
+.items {
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemmodem {
+  width: 140px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(217, 217, 217, 0.6);
+  overflow: hidden;
+}
+
+.itemmodem img {
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.ContentItem .mensaje {
+  position: absolute;
+  border-radius: 5px;
+  background: #da291c;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  pointer-events: none;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 112px;
+  padding: 10px;
+  display: none;
+}
+.ContentItem.active .mensaje {
+  display: block;
+}
+
+.content2 .mensaje {
+  left: initial;
+  transform: translate(100%, -50%);
+  right: -15px;
+  top: 50%;
+  bottom: initial;
+}
+
+.true .mensaje {
+  background: #20b038;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.btns button {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  background: #9b9b9b;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  pointer-events: none;
+}
+
+.btns button.active {
+  background: #da291c;
+  cursor: pointer;
+  pointer-events: all;
+}

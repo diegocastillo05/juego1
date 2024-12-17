@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Juego 1</title>
+  </head>
+  <body>
+    <div class="contentJuego">
+      <div class="espacio">
+        <div class="fondo">
+          <img src="img/fondo_juego1.png" alt="fondo" />
+        </div>
+        <div
+          class="ContentItem content1 true"
+          ondragover="allowDrop(event)"
+          ondrop="drop(event)"
+        >
+          <div class="mensaje">
+            Obtén mayor alcance de señal colocando tu router en una zona libre
+            de interferencias.
+          </div>
+        </div>
+        <div
+          class="ContentItem content2"
+          ondragover="allowDrop(event)"
+          ondrop="drop(event)"
+        >
+          <div class="mensaje">
+            No coloques tu router dentro de muebles porque reduce su señal.
+          </div>
+        </div>
+        <div
+          class="ContentItem content3"
+          ondragover="allowDrop(event)"
+          ondrop="drop(event)"
+        >
+          <div class="mensaje">
+            No coloques tu router cerca a dispositivos inalámbricos porque
+            interfieren su señal.
+          </div>
+        </div>
+        <div
+          class="ContentItem content4"
+          ondragover="allowDrop(event)"
+          ondrop="drop(event)"
+        >
+          <div class="mensaje">
+            No coloques tu router dentro de muebles porque reduce su señal.
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div
+          class="itemmodem"
+          draggable="true"
+          id="item"
+          ondragstart="drag(event)"
+        >
+          <img src="img/router.png" alt="" />
+        </div>
+      </div>
+
+      <div class="btns">
+        <button id="continuar">Continuar</button>
+        <button id="volver">Volver a intentar</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

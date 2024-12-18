@@ -174,7 +174,7 @@
 .contentJuego1 .part1 h2 {
   color: #fff;
   text-align: center;
-  font-family: AMX;
+  font-family: "AMX", "Roboto", sans-serif;
   font-size: 68px;
   font-weight: 700;
   text-align: center;
@@ -182,7 +182,7 @@
 
 .contentJuego1 .part1 p {
   color: #fff;
-  font-family: AMX;
+  font-family: "AMX", "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-align: center;
